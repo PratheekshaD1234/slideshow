@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,intial-scale=1">
+<Link rel="Stylesheet" href="/w3css/w3.css">
+<body>
+
+	
+
+	
+	<section>
+		<img class="mySlides" src="/home/nce/prathi/6.jpeg" style="width:100%">
+		<img class="mySlides" src="/home/nce/prathi/3.jpeg" style="width:100%">
+		<img class="mySlides" src="/home/nce/prathi/1.jpeg" style="width:100%">
+	</section>
+
+	<script>
+		
+		var myIndex=0;
+		carousel();
+
+		function carousel()
+		{
+			var i;
+
+		var x=document.getElementsByClassName("mySlides");
+		for(i=0;i<x.length;i++)
+		{
+			x[i].style.display="none";
+		}
+		myIndex++;
+		if(myIndex>x.length){myIndex=1}
+			x[myIndex-1].style.display="block";
+		setTimeout(carousel,3000);
+	}
+</script>
+		
+</body>
+</html>
+
+
+
+
